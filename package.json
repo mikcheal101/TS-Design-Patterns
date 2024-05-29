@@ -1,0 +1,22 @@
+{
+  "name": "designPatterns",
+  "version": "1.0.0",
+  "description": "Learning design patterns using tyoescript",
+  "main": "dist/main.js",
+  "author": "Hirekaan Micheal hemen",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "dev": "npx nodemon ./src/main.ts",
+    "build": "npx tsc",
+    "test": "No test specified!!!!",
+    "lint": "No liniting set yet!!!"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "eslint": "^9.3.0",
+    "nodemon": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
