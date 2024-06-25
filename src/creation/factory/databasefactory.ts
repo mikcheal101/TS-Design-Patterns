@@ -1,11 +1,11 @@
+import Database from "./database";
 import DatabaseType from "./databasetype";
-import IDatabase from "./idatabase";
 import MongoDbDatabase from "./mongodb.database";
 import OleDbDatabase from "./oledb.database";
 
 class DatabaseFactory {
-    public createDataBase(databaseType: DatabaseType): IDatabase {
-        let database: IDatabase;
+    public createDataBase(databaseType: DatabaseType): Database {
+        let database: Database;
 
         switch (databaseType) {
             case DatabaseType.MongoDbDatabase:
