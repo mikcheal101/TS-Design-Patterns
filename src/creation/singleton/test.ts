@@ -9,5 +9,4 @@ import LazyRegistryIODH from "./lazyregistry_iodh";
     loader = LazyRegistryIODH.getInstance();
     loader = LazyRegistryIODH.getInstance();
     loader = LazyRegistryIODH.getInstance();
-    console.log(loader);
 })();
