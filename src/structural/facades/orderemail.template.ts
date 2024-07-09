@@ -1,4 +1,4 @@
-import Template from "./template";
+import Template from "./templatefactory";
 
 class OrderEmailTemplate extends Template {
 
