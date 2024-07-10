@@ -1,47 +1,31 @@
+import Point2D from "./Point2D";
 
-class Point3D {
-    private a: number;
-    private b: number;
+class Point3D extends Point2D {
     private c: number;
     public static ZERO: Point3D = new Point3D(0, 0, 0);
 
     constructor(x: number, y: number, z: number) {
-        this.a = x;
-        this.b = y;
+        super(x, y);
         this.c = z;
-    }
-
-    public getA(): number {
-        return this.a;
-    }
-
-    public getB(): number {
-        return this.b;
     }
 
     public getC(): number {
         return this.c;
     }
 
-    public normalize(): Point3D {
-        return this;
-    }
-
-    public multiply(distance: number): Point3D {
-        this.a *= distance;
-        this.b *= distance;
+    public override multiply(distance: number): Point3D {
+        super.multiply(distance);
         this.c *= distance;
         return this;
     }
 
-    public add(move: Point3D): Point3D {
-        this.a += move.getA();
-        this.b += move.getB();
+    public override add(move: Point3D): Point3D {
+        super.add(move);
         this.c += move.getC();
         return this;
     }
 
-    public toString(): string {
+    public override toString(): string {
         return `[x = ${this.a}, y = ${this.b}, z = ${this.c}]`;
     }
 

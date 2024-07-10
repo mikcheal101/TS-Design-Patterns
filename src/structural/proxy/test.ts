@@ -1,6 +1,6 @@
-import Point2D from "./helpers/prototype/Point2D";
-import Image from "./structural/proxy/image";
-import ImageFactory from "./structural/proxy/image.factory";
+import Point2D from "../../helpers/prototype/Point2D";
+import Image from "./image";
+import ImageFactory from "./image.factory";
 
 
 (function main() {
