@@ -19,10 +19,11 @@ class Order extends Object {
         this._id = id;
     }
 
+    // notify
     public addItem(price: number): void {
         this._itemCost += price;
         this._count++;
-        this._orderObservers.forEach((observer: OrderObserver) => observer.updated(this));
+        this._orderObservers.forEach((observer: OrderObserver) => observer.updated(this)); // notification
     }
 
     public setDiscount(discount: number): void {
